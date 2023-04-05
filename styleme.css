@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif, "Times New Roman", Arial, Helvetica, Times, serif;
+  line-height: 1.5;
+}
+
+p::first-letter {
+  font-size: 1.5em;
+}
+
+main {
+  width: 825px;
+  border: 5px solid black;
+  background-color: #f7f7f7;
+  margin: 50px auto;
+  position: relative;
+}
+
+.back-home {
+  background-color: orangered;
+  position: absolute;
+  left: -45px;
+  top: -15px;
+  border: 2px solid orangered;
+  border-radius: 10px;
+}
+
+.back-home-link {
+  color: #fff;
+}
+
+.back-home > a:link:hover {
+  text-decoration: none;
+}
+
+h1,
+h3 {
+  color: #00c8ff;
+}
+
+h3 {
+  text-transform: capitalize;
+}
+
+.moods-img {
+  display: flex;
+  text-align: center;
+}
+
+.joke {
+  font-size: 14px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:link:hover {
+  text-decoration: underline;
+}
