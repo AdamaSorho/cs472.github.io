@@ -148,6 +148,10 @@ footer {
   margin-top: 50px;
 }
 
+.validators {
+  text-align: end;
+}
+
 .copyright {
   text-align: end;
   background-color: #e6e6e6;
