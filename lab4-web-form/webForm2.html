@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webForm2
+  </title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="webForm2.css">
+</head>
+
+<body>
+  <header>
+    <div class="links">
+      <p class="separator nav-title">MUM Golden Dome Market:::SRM System</p>
+      <p class="separator">
+        <a href="#">Products</a>
+      </p>
+      <p>
+        <a href="#">Suppliers</a>
+      </p>
+    </div>
+
+    <div class="signOut">
+      <span>Hello!</span>
+      <button class="btn btn-light">Sign Out</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <h4>New Product Form</h4>
+    <form>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="productNumber">Product Number</label>
+          <input type="text" class="form-control form-control-lg" id="productNumber">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="quantity">Quantity in stock</label>
+          <input type="number" class="form-control form-control-lg" id="quantity" value="0" required>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="name">Name</label>
+          <input type="text" class="form-control form-control-lg" id="name" required>
+        </div>
+
+        <div class="form-group col-md-6">
+          <label for="supplier">Supplier:</label>
+          <select id="supplier" class="form-control form-control-lg">
+            <option selected>Select a supplier</option>
+            <option>...</option>
+          </select>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="price">Unit price</label>
+          <input type="number" class="form-control form-control-lg" id="price" value="0.0" required>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="date">Date supplied</label>
+          <input type="date" class="form-control form-control-lg" id="date" required>
+          <small id="dateHelp" class="form-text text-muted">
+            Enter a valid Date
+          </small>
+        </div>
+      </div>
+
+      <div class="row float-right">
+        <div class="col-md-12">
+          <button type="reset" class="btn btn-outline-primary space-between">Reset</button>
+          <button type="button" class="btn btn-outline-danger space-between">Cancel</button>
+          <button type="submit" class="btn btn-outline-info">Add Product</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
