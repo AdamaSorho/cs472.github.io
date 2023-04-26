@@ -160,25 +160,53 @@ const getNewArray = function (array) {
 };
 
 //test functions
-console.log("max:", max(4, 3));
-console.log("maxOfThree:", maxOfThree(3, 6, 3));
-console.log("isVowel:", isVowel("u"));
-const nums = [1, 2, 3, 4, 5, 35, 21];
-console.log("sum:", sum(nums));
-console.log("multiply:", multiply(nums));
-console.log("reverse:", reverse("jag testar"));
-const words = ["sorho", "djamantcha", "adama", "Culiculiculi"];
-console.log("findLongestWord: ", findLongestWord(words));
-console.log("filterLongWords:", filterLongWords(words, 5));
-console.log("computeSumOfSquares: ", computeSumOfSquares(nums));
-printOddNumbersOnly(nums);
-console.log(
-  "computeSumOfSquaresOfEvensOnly:",
-  computeSumOfSquaresOfEvensOnly(nums)
-);
-console.log("sum2:", sum2(nums));
-console.log("multiply2:", multiply2(nums));
-console.log("findSecondBiggest:", findSecondBiggest(nums));
-printFibo(10, 0, 1);
-console.log("sum3:", sum3(nums));
-console.log("getNewArray:", getNewArray(words));
+// console.log("max:", max(4, 3));
+// console.log("maxOfThree:", maxOfThree(3, 6, 3));
+// console.log("isVowel:", isVowel("u"));
+// const nums = [1, 2, 3, 4, 5, 35, 21];
+// console.log("sum:", sum(nums));
+// console.log("multiply:", multiply(nums));
+// console.log("reverse:", reverse("jag testar"));
+// const words = ["sorho", "djamantcha", "adama", "Culiculiculi"];
+// console.log("findLongestWord: ", findLongestWord(words));
+// console.log("filterLongWords:", filterLongWords(words, 5));
+// console.log("computeSumOfSquares: ", computeSumOfSquares(nums));
+// printOddNumbersOnly(nums);
+// console.log(
+//   "computeSumOfSquaresOfEvensOnly:",
+//   computeSumOfSquaresOfEvensOnly(nums)
+// );
+// console.log("sum2:", sum2(nums));
+// console.log("multiply2:", multiply2(nums));
+// console.log("findSecondBiggest:", findSecondBiggest(nums));
+// printFibo(10, 0, 1);
+// console.log("sum3:", sum3(nums));
+// console.log("getNewArray:", getNewArray(words));
+
+// foo("Hi", 23);
+// function foo(arg) {
+//   if (arg) {
+//     let str = "hello";
+//   }
+//   console.log(str);
+// }
+
+// let baz = "" + 33 + 10;
+// console.log(baz);
+
+function averageScore(grade) {
+  let nStudents = 0;
+  let result = 0;
+
+  for (let key in gradeReport) {
+    // console.log(grade);
+    result += grade[key];
+    nStudents++;
+  }
+
+  return result / nStudents;
+}
+
+const gradeReport = { s101: 3, s102: 2, s103: 3 };
+
+console.log(averageScore(gradeReport));

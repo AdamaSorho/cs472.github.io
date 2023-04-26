@@ -1,0 +1,15 @@
+{
+  "name": "question2",
+  "version": "1.0.0",
+  "description": "question 2 description",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "sorho",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
